@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação em Direitos Humanos e Saúde Mental - Painéis</title>
+    <!-- Importando a fonte Inter e ícones do FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Container do Banner */
+        .banner-container {
+            width: 100%;
+            background-color: #0b3c5d;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: left center;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0b3c5d;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #666;
+            margin-bottom: 35px;
+            font-size: 1rem;
+        }
+
+        /* Grade de Botões */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Estilo dos Botões / Cards */
+        .menu-button {
+            background-color: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 24px 20px;
+            text-decoration: none;
+            color: #0b3c5d;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-button i {
+            font-size: 1.5rem;
+            color: #2e7d32; /* Tom de verde da marca */
+            background-color: #e8f5e9;
+            padding: 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-button:hover {
+            border-color: #2e7d32;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(46, 125, 50, 0.15);
+            background-color: #fafafa;
+        }
+
+        .menu-button:hover i {
+            background-color: #2e7d32;
+            color: #ffffff;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b3c5d;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .menu-button {
+                font-size: 1rem;
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Seção do Banner -->
+    <div class="banner-container">
+        <!-- Substitua 'banner.jpeg' pelo nome exato do seu arquivo de imagem -->
+        <img src="banner.jpeg" alt="Banner Educação em Direitos Humanos e Saúde Mental">
+    </div>
+
+    <!-- Seção dos Links / Botões -->
+    <div class="container">
+        <h1>Painéis e Relatórios</h1>
+        <p class="subtitle">Selecione abaixo o painel ou mapa desejado para acessar:</p>
+
+        <div class="menu-grid">
+            <!-- Botão 1 -->
+            <a href="https://dhsmental.github.io/DashAlunos/" class="menu-button" target="_blank">
+                <i class="fa-solid fa-user-graduate"></i>
+                <span>Dashboard Trilha 1 com Alunos</span>
+            </a>
+
+            <!-- Botão 2 -->
+            <a href="https://dhsmental.github.io/Dash/" class="menu-button" target="_blank">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Dashboard Trilha 1 Tutores</span>
+            </a>
+
+            <!-- Botão 3 -->
+            <a href="https://dhsmental.github.io/MapaCursistas/" class="menu-button" target="_blank">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Mapa Coroplético</span>
+            </a>
+
+            <!-- Botão 4 -->
+            <a href="https://dhsmental.github.io/Tutores/" class="menu-button" target="_blank">
+                <i class="fa-solid fa-users-viewfinder"></i>
+                <span>Tutores / Alunos</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Educação em Direitos Humanos e Saúde Mental - Acolher • Educar • Transformar</p>
+    </footer>
+
+</body>
+</html>
